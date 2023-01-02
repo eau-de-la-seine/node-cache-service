@@ -64,6 +64,6 @@
     "test": "jest",
     "test-seq": "npm test -- --runInBand",
     "eslint": "npx eslint . --fix --ext .js,.jsx,.ts,.tsx",
-    "tscbuild": "rm -rf ./lib && npx tsc"
+    "build": "rm -rf ./lib && npx tsc"
   }
 }
