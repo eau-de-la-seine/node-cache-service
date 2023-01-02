@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "esnext",
+    "esModuleInterop": true,
+    "declaration": true,
+    "module": "commonjs",
+    "outDir": "./lib"
+  },
+  "exclude": ["**.test.**"]
+}
