@@ -26,6 +26,7 @@
             "code": 150,
             "comments": 150
         }],
+        "no-unsafe-optional-chaining": ["error"],
         "prefer-const": ["error"],
         "import/no-extraneous-dependencies": ["error", {
             "devDependencies": [
@@ -40,6 +41,9 @@
         "import/prefer-default-export": "off",
         "import/extensions": ["error", "ignorePackages", {
             "ts": "never"
-        }]
+        }],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/prefer-optional-chain": "error"
     }
 }

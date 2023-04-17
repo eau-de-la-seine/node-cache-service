@@ -14,7 +14,7 @@ Notes:
 
 Example:
 ```js
-import cache from 'node-cache-service/index';
+import cache from 'node-cache-service';
 
 class SuperCalculatorService {
   // Mutable attribute for demo

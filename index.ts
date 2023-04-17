@@ -37,7 +37,8 @@ const cache = <SERVICE extends object>(service: SERVICE, nodeCache: NodeCache = 
     },
   };
 
-  return new Proxy(service, handler);
+  // Setting the prototype from the original service in order to solve problems related to mock libraries (jest, sinon etc)
+  return Object.setPrototypeOf(new Proxy(service, handler), Object.getPrototypeOf(service));
 };
 
 export default cache;
